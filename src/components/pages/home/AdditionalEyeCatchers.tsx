@@ -18,11 +18,12 @@ const AdditionalEyeCatchers: FC<IHomePage> = () => {
             and effortless. Best Balaji Packers and Movers is your trusted
             partner for seamless relocations. We specialize in taking the hassle
             out of moving, providing a wide range of services to cater to your
-            specific needs, whether it's a local move, a long-distance journey,
-            or corporate relocation. Our dedicated team ensures the utmost care
-            for your belongings, and our commitment to excellence means you can
-            trust us to handle every aspect of your move with professionalism
-            and precision. Discover a new level of moving ease with us.
+            specific needs, whether it&apos;s a local move, a long-distance
+            journey, or corporate relocation. Our dedicated team ensures the
+            utmost care for your belongings, and our commitment to excellence
+            means you can trust us to handle every aspect of your move with
+            professionalism and precision. Discover a new level of moving ease
+            with us.
           </p>
         </div>
         <Image
@@ -45,12 +46,13 @@ const AdditionalEyeCatchers: FC<IHomePage> = () => {
             Every move is a new chapter in your life story, and we want to help
             you start it on the right foot. Best Balaji Packers and Movers is
             here to facilitate your journey to a fresh beginning with a seamless
-            and efficient moving experience. Whether you're moving your home or
-            business, our services are designed to ensure that the transition is
-            as smooth and stress-free as possible. With our team's expertise,
-            cutting-edge equipment, and commitment to customer satisfaction, you
-            can trust us to take care of every detail. Your next adventure
-            awaits – let us help you embark on it with confidence and ease.
+            and efficient moving experience. Whether you&apos;re moving your
+            home or business, our services are designed to ensure that the
+            transition is as smooth and stress-free as possible. With our
+            team&apos;s expertise, cutting-edge equipment, and commitment to
+            customer satisfaction, you can trust us to take care of every
+            detail. Your next adventure awaits – let us help you embark on it
+            with confidence and ease.
           </p>
         </div>
       </div>

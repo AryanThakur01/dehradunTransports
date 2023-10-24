@@ -27,8 +27,9 @@ const Services: FC<IServices> = () => {
         At Best Balaji Packers and Movers, we offer a comprehensive array of
         services, meticulously tailored to ensure your move is smooth, secure,
         and stress-free. From packing your precious memories with care to the
-        joy of unpacking them in your new home, we're here to transform your
-        move into a seamless journey filled with confidence and peace of mind.
+        joy of unpacking them in your new home, we&apos;re here to transform
+        your move into a seamless journey filled with confidence and peace of
+        mind.
       </p>
       <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3">
         {serviceList?.map((point) => (
