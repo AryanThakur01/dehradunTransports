@@ -1,18 +1,15 @@
-import { ThemeProvider } from "@/components/ThemeProvider";
+import ThemeProvider from "@/components/ThemeProvider";
 import "./globals.css";
 import "./layout.scss";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Nav from "@/components/Nav";
 import Script from "next/script";
-// import { ThemeProvider } from "./components/ThemeProvider";
-// import Nav from "./components/Nav";
-// import LeftNav from "./components/LeftNav";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "DSA Visualizer",
+  title: "Best Balaji packers and movers",
   description: "get the visualization of data structures and algorithms",
 };
 
@@ -23,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className + " bg-background"}>
+      <body className={inter.className + " bg-background text-foreground"}>
         <div className="container">
           <Script src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID" />
           <Script id="google-analytics">
@@ -38,17 +35,16 @@ export default function RootLayout({
         </div>
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
           {/* Top Navigation Menu */}
-          <header className="sticky top-0 w-full border-b border-border py-2 text-foreground z-50 bg-background flex items-center">
+          <header className="m-auto sticky top-0 w-full border-b border-border py-2 text-foreground z-50 bg-background flex items-center">
             <Nav />
           </header>
-
           {/* Main Contents */}
-          <main className="flex min-h-[80vh]">{children}</main>
+          <main>{children}</main>
         </ThemeProvider>
       </body>
     </html>
