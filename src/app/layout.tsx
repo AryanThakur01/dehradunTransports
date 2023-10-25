@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Nav from "@/components/Nav";
 import Script from "next/script";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -45,6 +46,10 @@ export default function RootLayout({
           </header>
           {/* Main Contents */}
           <main>{children}</main>
+          <Footer classname="bg-secondary" />
+          <div className="text-center my-3">
+            <p>Copyright © Aryan Tech Solutins | All rights reserved</p>
+          </div>
         </ThemeProvider>
       </body>
     </html>

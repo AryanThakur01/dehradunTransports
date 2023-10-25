@@ -1,14 +1,14 @@
 import Hero from "@/components/Hero";
 import Section from "@/components/ui/section";
-import AboutHero from "@/images/home-hero.jpg";
+import ContactHero from "@/images/home-hero.jpg";
 
 const Top = () => {
   return (
     <>
-      <Hero heroImg={AboutHero} />
+      <Hero heroImg={ContactHero} />
       <Section className="min-h-[25rem] flex flex-col justify-center mb-10">
         <h1 className="font-bold text-4xl text-primary-foreground text-center">
-          About
+          Contact
         </h1>
       </Section>
     </>

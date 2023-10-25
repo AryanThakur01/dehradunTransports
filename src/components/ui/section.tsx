@@ -11,20 +11,19 @@ const Section: FC<ISection> = ({ children, className, title }) => {
   return (
     <>
       <section
-        className={cn(
-          "md:px-[9rem] m-auto w-full container flex flex-col my-3",
-          className,
-        )}
+        className={cn("m-auto w-full container flex flex-col my-3", className)}
       >
-        {title && (
-          <>
-            <h2 className="text-2xl w-fit font-semibold">
-              {title?.toUpperCase()}
-              <hr className="w-[80%] mt-2 mb-4 border-success border-2 rounded" />
-            </h2>
-          </>
-        )}
-        {children}
+        <div className="max-w-[66rem] m-auto">
+          {title && (
+            <>
+              <h2 className="text-2xl w-fit font-semibold">
+                {title?.toUpperCase()}
+                <hr className="w-[80%] mt-2 mb-4 border-success border-2 rounded" />
+              </h2>
+            </>
+          )}
+          {children}
+        </div>
       </section>
     </>
   );
