@@ -8,8 +8,8 @@ interface IHomePage {}
 const AdditionalEyeCatchers: FC<IHomePage> = () => {
   return (
     <Section className="bg-secondary py-8 shadow-inner">
-      <div className="grid grid-cols-3 gap-4 items-center my-4">
-        <div className="col-span-2">
+      <div className="flex md:flex-row flex-col-reverse gap-4 items-center my-4">
+        <div>
           <h3 className="font-bold text-2xl text-secondary-foreground">
             Effortless Relocations by Balaji
           </h3>
@@ -29,14 +29,14 @@ const AdditionalEyeCatchers: FC<IHomePage> = () => {
         <Image
           src={HeroImage}
           alt="Relocation Made Easy with Best Balaji Packers and Movers"
-          className="w-full max-w-[23rem] rounded shadow"
+          className="w-full min-w-[20rem] max-w-full rounded shadow"
         />
       </div>
-      <div className="grid grid-cols-3 gap-4 items-center my-4">
+      <div className="flex md:flex-row flex-col gap-4 items-center my-4">
         <Image
           src={HeroImage}
           alt="Relocation Made Easy with Best Balaji Packers and Movers"
-          className="w-full max-w-[23rem] rounded shadow"
+          className="w-full min-w-[20rem] max-w-full rounded shadow"
         />
         <div className="col-span-2">
           <h3 className="font-bold text-2xl text-secondary-foreground">

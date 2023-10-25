@@ -15,7 +15,11 @@ const Card: FC<ICard> = ({ title, icon, image }) => {
         {icon}
         {title}
       </p>
-      <Image src={image} alt="Experienced" className="w-32 self-center my-6" />
+      <Image
+        src={image}
+        alt="Experienced"
+        className="w-40 self-center my-2 justify-self-center"
+      />
     </div>
   );
 };
