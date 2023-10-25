@@ -1,11 +1,9 @@
-import React from "react";
+import AboutPage from "@/components/pages/about/AboutPage";
 
-type Props = {};
-
-const page = (props: Props) => {
+const page = () => {
   return (
     <>
-      <h2>This is about us page</h2>
+      <AboutPage />
     </>
   );
 };
