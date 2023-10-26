@@ -65,7 +65,7 @@ const ContactForm = () => {
               </form>
             )}
           </Formik>
-          <div className="h-80 overflow-hidden flex items-center">
+          <div className="h-80 overflow-hidden hidden md:flex items-center">
             <Image src={ContactUs} alt="Contact Us" className="rounded-md" />
           </div>
         </div>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FC } from "react";
-import { NavLinks, ThemeSelector } from "./MainNav";
+import { Hamburger, NavLinks, ThemeSelector } from "./MainNav";
 
 interface INav {}
 
@@ -12,7 +12,10 @@ const Nav: FC<INav> = () => {
           BBPM
         </Link>
         <NavLinks />
-        <ThemeSelector />
+        <div className="flex gap-3">
+          <ThemeSelector />
+          <Hamburger />
+        </div>
       </div>
     </>
   );

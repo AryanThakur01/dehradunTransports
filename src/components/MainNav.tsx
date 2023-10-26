@@ -6,7 +6,16 @@ import { FC, useState } from "react";
 import { DropdownMenu, DropdownMenuTrigger } from "./ui/dropdown-menu";
 import { useTheme } from "next-themes";
 import { Button } from "./ui/button";
-import { MoonIcon, SunIcon } from "lucide-react";
+import { Menu, MoonIcon, SunIcon } from "lucide-react";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "./ui/sheet";
 
 interface INav {}
 export const NavLinks: FC<INav> = () => {
@@ -60,5 +69,41 @@ export const ThemeSelector: FC<IThemeSelector> = () => {
         </Button>
       </DropdownMenuTrigger>
     </DropdownMenu>
+  );
+};
+
+export const Hamburger = () => {
+  return (
+    <Sheet>
+      <SheetTrigger className="md:hidden">
+        <Menu />
+      </SheetTrigger>
+      <SheetContent
+        className="max-w-full w-[400px] sm:w-[540px] border-r-border"
+        side="left"
+      >
+        <SheetHeader>
+          <SheetTitle className="text-left my-2">BBPM</SheetTitle>
+          <hr />
+        </SheetHeader>
+        <ul className="my-2">
+          <li>
+            <SheetClose asChild>
+              <Link href="/">Home</Link>
+            </SheetClose>
+          </li>
+          <li>
+            <SheetClose asChild>
+              <Link href="/about">About</Link>
+            </SheetClose>
+          </li>
+          <li>
+            <SheetClose asChild>
+              <Link href="/contact">Contact</Link>
+            </SheetClose>
+          </li>
+        </ul>
+      </SheetContent>
+    </Sheet>
   );
 };
