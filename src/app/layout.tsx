@@ -48,7 +48,7 @@ export default function RootLayout({
           <main>{children}</main>
           <Footer classname="bg-secondary" />
           <div className="text-center my-3">
-            <p>Copyright © Aryan Tech Solutins | All rights reserved</p>
+            <p>Copyright © Aryan Tech Solutions | All rights reserved</p>
           </div>
         </ThemeProvider>
       </body>

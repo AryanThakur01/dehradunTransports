@@ -18,7 +18,7 @@ const Top = () => {
         <p className="max-w-3xl text-primary-foreground">
           Your Trusted Partner for Hassle-Free Relocations
         </p>
-        <div className="flex gap-3 flex-wrap">
+        <div className="flex gap-1 flex-wrap">
           <Link
             href="/about"
             className={cn(

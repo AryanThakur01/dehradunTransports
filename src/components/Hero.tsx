@@ -9,7 +9,12 @@ interface IHero {
 const Hero: FC<IHero> = ({ heroImg }) => {
   return (
     <div className="inset-0 top-12 z-[-2] overflow-hidden h-[70vh] absolute flex items-center min-h-[27rem]">
-      <Image src={heroImg} alt="BBPM Transports" className="" />
+      <Image
+        src={heroImg}
+        alt="BBPM Transports"
+        sizes="(max-width: 768px) 50vw, 70vw"
+        className="min-h-full"
+      />
       <div className="overlay w-full h-full bg-black absolute opacity-50" />
     </div>
   );
