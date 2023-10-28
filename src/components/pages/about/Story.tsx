@@ -22,11 +22,11 @@ const Story: FC<IIntro> = () => {
         <p>
           Their dedication paid off. Today, their business thrives, connecting
           cities and industries, and their small startup has grown into a
-          respected and reliable transport company. The road to success wasn't
-          easy, but Mark and Sarah's hard work, unwavering commitment, and a
-          touch of innovation transformed their dream into a reality, proving
-          that determination and ambition can overcome any obstacle on the path
-          to success.
+          respected and reliable transport company. The road to success
+          wasn&apos;t easy, but Mark and Sarah&apos;s hard work, unwavering
+          commitment, and a touch of innovation transformed their dream into a
+          reality, proving that determination and ambition can overcome any
+          obstacle on the path to success.
         </p>
       </article>
     </Section>
