@@ -6,7 +6,7 @@ const Top = () => {
   return (
     <>
       <Hero heroImg={ContactHero} />
-      <Section className="min-h-[25rem] flex flex-col justify-center mb-10">
+      <Section className="min-h-[25rem] flex flex-col justify-center mb-10 h-[70vh]">
         <h1 className="font-bold text-4xl text-primary-foreground text-center">
           Contact
         </h1>

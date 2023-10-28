@@ -10,7 +10,7 @@ const Top = () => {
   return (
     <>
       <Hero heroImg={HeroImage} />
-      <Section className="justify-center min-h-[26rem]">
+      <Section className="justify-center min-h-[26rem] h-[70vh]">
         <h1 className="font-bold text-3xl max-w-4xl text-primary-foreground">
           Relocating Lives, One Move at a Time with Best Balaji Packers and
           Movers.
