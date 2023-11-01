@@ -5,7 +5,7 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 interface IServiceCard {
   title: string;
   image: string | StaticImport;
-  detail: string;
+  detail?: string;
 }
 
 const ServiceCard: FC<IServiceCard> = ({ title, image, detail }) => {
