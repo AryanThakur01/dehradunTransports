@@ -20,7 +20,7 @@ const Introduction = () => {
   ];
 
   return (
-    <Section title="introduction">
+    <Section title="introduction" className="my-3">
       <article>
         Welcome to Best Balaji Packers and Movers, your go-to solution for all
         your moving needs. We understand that moving can be a stressful and

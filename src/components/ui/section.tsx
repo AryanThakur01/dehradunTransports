@@ -11,9 +11,9 @@ const Section: FC<ISection> = ({ children, className, title }) => {
   return (
     <>
       <section
-        className={cn("m-auto w-full container flex flex-col my-3", className)}
+        className={cn("mx-auto w-full container flex flex-col", className)}
       >
-        <div className="max-w-[66rem] m-auto">
+        <div className="max-w-[66rem] mx-auto">
           {title && (
             <>
               <h2 className="text-2xl w-fit font-semibold">

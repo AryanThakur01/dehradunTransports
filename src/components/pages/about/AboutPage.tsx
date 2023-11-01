@@ -7,7 +7,7 @@ const AboutPage = () => {
     <>
       <Top />
       <Introduction />
-      <Story />
+      {/* <Story /> */}
     </>
   );
 };

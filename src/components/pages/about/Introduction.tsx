@@ -7,14 +7,16 @@ interface IIntro {}
 
 const Introduction: FC<IIntro> = () => {
   return (
-    <Section title="Our Company Vision" className="bg-secondary py-3">
+    <Section title="Our Company Vision" className="py-3 my-5">
       <div className="flex gap-3 items-center justify-between flex-wrap-reverse">
         <p className="md:max-w-[50%] max-w-[100%]">
-          At Best Balaji Transports, our vision is to redefine the standards of
-          excellence in the truck transport industry. We envision a future where
-          our services are not just about moving goods from one place to another
-          but also about delivering peace of mind, reliability, and exceeding
-          customer expectations.
+          Best Balaji Packers and Movers" is a distinguished company with a vast
+          network of branches, spanning across India, to serve our valued
+          customers. With a commitment to simplifying the complexities of
+          relocation, we have earned recognition for delivering top-quality
+          services at the most competitive rates. Our enduring strength lies in
+          offering a wide spectrum of relocation services, ensuring that every
+          aspect of your move is well taken care of
         </p>
         <Image
           src={Focus}

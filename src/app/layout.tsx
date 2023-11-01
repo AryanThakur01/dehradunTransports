@@ -41,7 +41,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {/* Top Navigation Menu */}
-          <header className="m-auto sticky top-0 w-full border-b border-border py-2 text-foreground z-50 bg-background flex items-center">
+          <header className="m-auto sticky top-0 w-full border-b border-border py-2 text-foreground z-50 bg-background/90 flex items-center backdrop-blur-sm shadow">
             <Nav />
           </header>
           {/* Main Contents */}

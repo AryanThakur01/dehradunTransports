@@ -10,7 +10,7 @@ const ContactForm = () => {
   return (
     <>
       <Section>
-        <div className="bg-secondary flex items-center p-4 gap-3 rounded shadow-lg border border-border">
+        <div className="bg-secondary flex items-center p-4 gap-3 rounded shadow-lg border border-border my-7">
           <Formik
             initialValues={{ email: "", password: "" }}
             validate={(values) => {
