@@ -11,7 +11,6 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -37,6 +36,12 @@ export const NavLinks: FC<INav> = () => {
           className={pathName === "/contact" ? "text-primary" : ""}
         >
           Contact
+        </Link>
+        <Link
+          href="/services"
+          className={pathName === "/services" ? "text-primary" : ""}
+        >
+          Services
         </Link>
       </div>
     </>
@@ -100,6 +105,11 @@ export const Hamburger = () => {
           <li>
             <SheetClose asChild>
               <Link href="/contact">Contact</Link>
+            </SheetClose>
+          </li>
+          <li>
+            <SheetClose asChild>
+              <Link href="/services">Services</Link>
             </SheetClose>
           </li>
         </ul>

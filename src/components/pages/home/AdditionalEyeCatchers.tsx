@@ -1,6 +1,9 @@
 import Section from "@/components/ui/section";
 import Image from "next/image";
 import HeroImage from "@/images/home-hero.jpg";
+import EffortlessRelocation from "@/images/home-effortless.jpg";
+import StartJourney from "@/images/home-start_journey.jpg";
+
 import { FC } from "react";
 
 interface IHomePage {}
@@ -27,16 +30,18 @@ const AdditionalEyeCatchers: FC<IHomePage> = () => {
           </p>
         </div>
         <Image
-          src={HeroImage}
+          src={EffortlessRelocation}
+          sizes="(max-width: 768px) 20rem, 20rem"
           alt="Relocation Made Easy with Best Balaji Packers and Movers"
-          className="w-full min-w-[20rem] max-w-full rounded shadow"
+          className="w-full md:min-w-[20rem] max-w-full rounded shadow"
         />
       </div>
       <div className="flex md:flex-row flex-col gap-4 items-center my-4">
         <Image
-          src={HeroImage}
+          src={StartJourney}
+          sizes="(max-width: 768px) 20rem, 20rem"
           alt="Relocation Made Easy with Best Balaji Packers and Movers"
-          className="w-full min-w-[20rem] max-w-full rounded shadow"
+          className="w-full md:min-w-[20rem] max-w-full rounded shadow"
         />
         <div className="col-span-2">
           <h3 className="font-bold text-2xl text-secondary-foreground">

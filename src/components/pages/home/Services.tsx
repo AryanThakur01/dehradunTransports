@@ -3,6 +3,9 @@ import Section from "@/components/ui/section";
 import { Truck } from "lucide-react";
 import Professional from "@/images/home-experience.png";
 import ServiceCard from "@/components/ServiceCard";
+import { Button, buttonVariants } from "@/components/ui/button";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 interface IServices {}
 
@@ -15,11 +18,6 @@ const Services: FC<IServices> = () => {
       image: Professional,
     },
     { title: "Residential Moving", icon: <Truck />, image: Professional },
-    {
-      title: "Local And Long Distance",
-      icon: <Truck />,
-      image: Professional,
-    },
   ];
   return (
     <Section title="Services">
@@ -36,6 +34,15 @@ const Services: FC<IServices> = () => {
           <ServiceCard {...point} key={point.title} />
         ))}
       </div>
+      <Link
+        className={cn(
+          buttonVariants({ variant: "outline" }),
+          "mx-auto my-3 block w-32 text-center border-primary text-primary hover:text-primary",
+        )}
+        href="/about"
+      >
+        Show More
+      </Link>
     </Section>
   );
 };

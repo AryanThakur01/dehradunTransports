@@ -13,7 +13,7 @@ const Hero: FC<IHero> = ({ heroImg }) => {
         src={heroImg}
         alt="BBPM Transports"
         sizes="(max-width: 768px) 50vw, 70vw"
-        className="min-h-full"
+        className="min-h-full w-full"
       />
       <div className="overlay w-full h-full bg-black absolute opacity-50" />
     </div>
