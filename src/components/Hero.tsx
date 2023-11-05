@@ -12,8 +12,13 @@ const Hero: FC<IHero> = ({ heroImg }) => {
       <Image
         src={heroImg}
         alt="BBPM Transports"
-        sizes="(max-width: 768px) 50vw, 70vw"
-        className="min-h-full w-full"
+        sizes="(max-width: 768px) 70vw, 90vw"
+        // className="min-h-full w-full"
+        quality={100}
+        fill
+        style={{
+          objectFit: "cover",
+        }}
       />
       <div className="overlay w-full h-full bg-black absolute opacity-50" />
     </div>

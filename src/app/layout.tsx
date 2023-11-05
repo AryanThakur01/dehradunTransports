@@ -4,6 +4,7 @@ import "./layout.scss";
 import { Inter } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,7 @@ export default function RootLayout({
             <p>Copyright © Aryan Tech Solutions | All rights reserved</p>
           </div>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
