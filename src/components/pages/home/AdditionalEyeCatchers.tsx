@@ -18,11 +18,11 @@ const AdditionalEyeCatchers: FC<IHomePage> = () => {
           </h3>
           <p>
             Your Local Experts in Dehradun! Welcome to a stress-free moving
-            experience with Best Balaji Packers and Movers. We're your trusted
-            choice for seamless relocations and dependable transport services in
-            Dehradun. Whether it's a home move or local transportation, we're
-            here to make it effortless. Choose Dehradun's best packers and
-            movers for peace of mind.
+            experience with Best Balaji Packers and Movers. We&apos;re your
+            trusted choice for seamless relocations and dependable transport
+            services in Dehradun. Whether it&apos;s a home move or local
+            transportation, we&apos;re here to make it effortless. Choose
+            Dehradun&apos;s best packers and movers for peace of mind.
           </p>
         </div>
         <Image
@@ -48,10 +48,10 @@ const AdditionalEyeCatchers: FC<IHomePage> = () => {
             stress-free relocation and transportation experience with Balaji
             Packers and Movers. We are your trusted companions for seamless
             moving and dependable transport services in Dehradun and its
-            surroundings. Whether it's a home transition or local
-            transportation, we're here to make your journey hassle-free and
-            efficient. Choose Dehradun's finest packers and movers to embark on
-            your relocation adventure with confidence.
+            surroundings. Whether it&apos;s a home transition or local
+            transportation, we&apos;re here to make your journey hassle-free and
+            efficient. Choose Dehradun&apos;s finest packers and movers to
+            embark on your relocation adventure with confidence.
           </p>
         </div>
       </div>
