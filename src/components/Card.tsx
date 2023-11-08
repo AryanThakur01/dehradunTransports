@@ -19,6 +19,7 @@ const Card: FC<ICard> = ({ title, icon, image }) => {
         src={image}
         alt="Experienced"
         className="w-40 self-center my-2 justify-self-center"
+        sizes="(max-width: 768px) 70%, 80%"
       />
     </div>
   );

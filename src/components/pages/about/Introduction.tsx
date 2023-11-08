@@ -10,13 +10,16 @@ const Introduction: FC<IIntro> = () => {
     <Section title="Our Company Vision" className="py-3 my-5">
       <div className="flex gap-3 items-center justify-between flex-wrap-reverse">
         <p className="md:max-w-[50%] max-w-[100%]">
-          Best Balaji Packers and Movers is a distinguished company with a vast
-          network of branches, spanning across India, to serve our valued
-          customers. With a commitment to simplifying the complexities of
-          relocation, we have earned recognition for delivering top-quality
-          services at the most competitive rates. Our enduring strength lies in
-          offering a wide spectrum of relocation services, ensuring that every
-          aspect of your move is well taken care of
+          At Best Balaji Packers and Movers, we've been the trusted choice for
+          transport and relocation services in Dehradun since [Year]. Our
+          journey began with the vision of providing exceptional and
+          customer-centric solutions, and we've since grown into a
+          well-respected name in the industry. With a dedicated team, local
+          expertise, and a commitment to quality service, we make relocations
+          and transportation hassle-free. Whether it's moving your home, your
+          office, or transporting goods, we're here to ensure a smooth and
+          efficient experience. Your satisfaction and peace of mind are our top
+          priorities, and we look forward to being your reliable moving partner.
         </p>
         <Image
           src={Focus}

@@ -15,6 +15,12 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "./ui/sheet";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@radix-ui/react-tooltip";
 
 interface INav {}
 export const NavLinks: FC<INav> = () => {
@@ -81,7 +87,18 @@ export const Hamburger = () => {
   return (
     <Sheet>
       <SheetTrigger className="md:hidden">
-        <Menu />
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger className="flex items-center">
+              <Menu />
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="bg-secondary-foreground/95 text-background w-20 rounded shadow relative top-2">
+                Menu
+              </p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
       </SheetTrigger>
       <SheetContent
         className="max-w-full w-[400px] sm:w-[540px] border-r-border"

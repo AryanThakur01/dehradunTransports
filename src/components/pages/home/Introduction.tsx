@@ -22,13 +22,17 @@ const Introduction = () => {
   return (
     <Section title="introduction" className="my-3">
       <article>
-        Welcome to Best Balaji Packers and Movers, your go-to solution for all
-        your moving needs. We understand that moving can be a stressful and
-        challenging experience. That&apos;s where we come in – to make your move
-        smooth, efficient, and hassle-free. With years of experience and a
-        dedicated team, we&apos;ve built a reputation for being the best in the
-        business. Our commitment to excellence and customer satisfaction sets us
-        apart.
+        Welcome to Best Balaji Packers and Movers, your trusted partner in
+        Dehradun for all your transport and house shifting needs. We are the
+        local experts dedicated to delivering top-notch moving and
+        transportation services exclusively in Dehradun and its surrounding
+        areas. With a commitment to excellence and a focus on customer
+        satisfaction, we make your moves seamless and stress-free. Whether
+        you're relocating your home or require efficient transport services
+        within the city, you can rely on Best Balaji Packers and Movers for a
+        hassle-free experience. Discover the difference of working with
+        Dehradun&apos;s best packers and movers, where your peace of mind is our
+        priority.
       </article>
       <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-3 my-3">
         {keyPoints?.map((point) => <Card {...point} key={point.title} />)}

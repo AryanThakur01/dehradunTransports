@@ -13,7 +13,6 @@ const Hero: FC<IHero> = ({ heroImg }) => {
         src={heroImg}
         alt="BBPM Transports"
         sizes="(max-width: 768px) 70vw, 90vw"
-        // className="min-h-full w-full"
         quality={100}
         fill
         style={{

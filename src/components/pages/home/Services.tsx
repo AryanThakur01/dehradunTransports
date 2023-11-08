@@ -17,17 +17,19 @@ const Services: FC<IServices> = () => {
       icon: <Truck />,
       image: Professional,
     },
-    { title: "Residential Moving", icon: <Truck />, image: Professional },
+
+    { title: "Residential Relocation", icon: <Truck />, image: Professional },
   ];
   return (
     <Section title="Services">
       <p className="mb-3">
-        At Best Balaji Packers and Movers, we offer a comprehensive array of
-        services, meticulously tailored to ensure your move is smooth, secure,
-        and stress-free. From packing your precious memories with care to the
-        joy of unpacking them in your new home, we&apos;re here to transform
-        your move into a seamless journey filled with confidence and peace of
-        mind.
+        At Best Balaji Packers and Movers, we offer a comprehensive suite of
+        services to simplify your moving needs. From residential relocations to
+        commercial moves, local transportation, and specialized assistance in
+        packing, unpacking, loading, and unloading, we've got it all covered.
+        Our commitment to excellence and your satisfaction drives every aspect
+        of our operations. Experience seamless and stress-free moving and
+        transportation in Dehradun with Best Balaji Packers and Movers.
       </p>
       <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-3">
         {serviceList?.map((point) => (
