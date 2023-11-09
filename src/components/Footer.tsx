@@ -20,12 +20,12 @@ const Footer: FC<IFooter> = ({ classname }) => {
           About Us
         </h3>
         <p>
-          Welcome to Best Balaji Packers and Movers, your reliable moving
-          companion. With years of experience, we specialize in making
-          relocations effortless and customer-focused. Our dedicated team,
-          cutting-edge equipment, and unwavering commitment to excellence ensure
-          that your move is smooth, secure, and stress-free. Join us for a
-          remarkable moving experience.
+          At Best Balaji Packers and Movers, we offer a comprehensive suite of
+          services to simplify your moving needs. From residential relocations
+          to commercial moves, local transportation, and specialized assistance
+          in packing, unpacking, loading, and unloading, we&apos;ve got it all
+          covered. Our commitment to excellence and your satisfaction drives
+          every aspect of our operations.
         </p>
       </div>
       <div>

@@ -10,7 +10,7 @@ interface IServiceCard {
 
 const ServiceCard: FC<IServiceCard> = ({ title, image, detail }) => {
   return (
-    <div className="border border-border flex flex-col bg-card rounded overflow-hidden shadow hover:rotate-1 transition-shadow">
+    <div className="border border-border justify-between flex flex-col bg-card rounded overflow-hidden shadow hover:rotate-1 transition-shadow">
       <Image src={image} alt="Experienced" className="w-32 self-center my-6" />
 
       <div className="container my-3">

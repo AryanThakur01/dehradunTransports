@@ -6,6 +6,7 @@ import Experience from "@/images/home-experience.jpg";
 import Affordable from "@/images/home-affordable.jpg";
 import ProfessionalTeam from "@/images/home-professional_team.jpg";
 import LocalAndLongDistance from "@/images/local-and-distant.jpg";
+import Link from "next/link";
 
 const Introduction = () => {
   const keyPoints = [
@@ -28,7 +29,13 @@ const Introduction = () => {
         transportation services exclusively in Dehradun and its surrounding
         areas. With a commitment to excellence and a focus on customer
         satisfaction, we make your moves seamless and stress-free. Whether
-        you&apos;re relocating your home or require efficient transport services
+        you&apos;re relocating your home or require{" "}
+        <Link
+          href="/services"
+          className="text-primary hover:underline relative top-[0.9px]"
+        >
+          efficient transport services
+        </Link>{" "}
         within the city, you can rely on Best Balaji Packers and Movers for a
         hassle-free experience. Discover the difference of working with
         Dehradun&apos;s best packers and movers, where your peace of mind is our
