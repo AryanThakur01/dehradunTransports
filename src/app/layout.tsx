@@ -5,8 +5,14 @@ import { Inter } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
+export const metadata: Metadata = {
+  verification: {
+    google: "fzlZZKohQWgPVK2Dw4eokS7HWZMWq0UOcxhENin5o0Y",
+  },
+};
 
 export default function RootLayout({
   children,
