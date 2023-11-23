@@ -1,72 +1,81 @@
 "use client";
-import { Input } from "@/components/ui/input";
+import Input from "@/components/ui/input";
 import Section from "@/components/ui/section";
-import { Formik } from "formik";
+import { Form, Formik, FormikProvider, FormikValues, useFormik } from "formik";
 import ContactUs from "@/images/contact-us.jpg";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import * as yup from "yup";
+import { Router } from "next/router";
+import { useRouter } from "next/navigation";
 
+interface FormValues {
+  name: string;
+  email: string;
+  contact: string;
+}
 const ContactForm = () => {
+  const router = useRouter();
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      contact: "",
+    },
+    onSubmit: (values, { setSubmitting }) => {
+      let body = `First Name=${values.name}%0D%0AContact=${values.contact}%0D%0AEmail=${values.email}`;
+      router.push(
+        `mailto:thakuraryan942@gmail.com?subject=Contact&body=${body}`,
+      );
+    },
+    validationSchema: yup.object({
+      name: yup.string().required("Enter Your Name"),
+      email: yup.string().required("Enter Your Email").email(),
+      contact: yup
+        .string()
+        .required("Enter Your Contact Number")
+        .length(10, "Recheck Contact"),
+    }),
+  });
   return (
     <>
       <Section>
         <div className="bg-secondary flex items-center p-4 gap-3 rounded shadow-lg border border-border my-7">
-          <Formik
-            initialValues={{ email: "", password: "" }}
-            validate={(values) => {
-              const errors = {};
-              return errors;
-            }}
-            onSubmit={(values, { setSubmitting }) => {
-              setTimeout(() => {
-                alert(JSON.stringify(values, null, 2));
-
-                setSubmitting(false);
-              }, 400);
-            }}
-          >
-            {({
-              values,
-              errors,
-              touched,
-              handleChange,
-              handleBlur,
-              handleSubmit,
-              isSubmitting,
-              /* and other goodies */
-            }) => (
-              <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-                <h3 className="text-center font-bold text-card-foreground">
-                  Reach Us
-                </h3>
+          <FormikProvider value={formik}>
+            <Form className="flex flex-col gap-4 w-1/2">
+              <h3 className="text-center font-bold text-card-foreground">
+                Reach Us
+              </h3>
+              <div className="flex gap-2">
+                <Input
+                  type="text"
+                  uni="name"
+                  placeholder="Enter your name"
+                  label="Name"
+                  required={true}
+                />
                 <Input
                   type="email"
-                  name="email"
-                  onChange={handleChange}
-                  onBlur={handleBlur}
-                  value={values.email}
+                  uni="email"
+                  placeholder="Enter your email"
+                  label="Email"
+                  required={true}
                 />
-
-                {errors.email && touched.email && errors.email}
-
-                <Input
-                  type="password"
-                  name="password"
-                  onChange={handleChange}
-                  onBlur={handleBlur}
-                  value={values.password}
-                />
-
-                {errors.password && touched.password && errors.password}
-
-                <Button type="submit" disabled={isSubmitting} variant="default">
-                  Submit
-                </Button>
-              </form>
-            )}
-          </Formik>
-          <div className="h-80 overflow-hidden hidden md:flex items-center">
-            <Image src={ContactUs} alt="Contact Us" className="rounded-md" />
+              </div>
+              <Input
+                type="text"
+                uni="contact"
+                placeholder="Enter your phone number"
+                label="Phone Number"
+                required={true}
+              />
+              <Button type="submit" variant="default">
+                Submit
+              </Button>
+            </Form>
+          </FormikProvider>
+          <div className="h-80 overflow-hidden hidden md:flex items-center rounded-lg border border-border">
+            <Image src={ContactUs} alt="Contact Us" />
           </div>
         </div>
       </Section>
