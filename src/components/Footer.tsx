@@ -46,20 +46,17 @@ const Footer: FC<IFooter> = ({ classname }) => {
         </h3>
         <div className="flex gap-3">
           <Navigation size={40} />
-          <p>
-            Registered office: 23/6, Wing 6, Premnagar, Dehradun,
-            Uttarakhand-248007
-          </p>
+          <p>Registered somewhere exists</p>
         </div>
         <div className="flex gap-3 flex-wrap">
           <div>
             <Phone />
           </div>
           <a href="tel:918077002445" className="hover:underline">
-            +918077002445
+            +911234567890
           </a>
           <a href="tel:918077002445" className="hover:underline">
-            +918077002445
+            +919018234560
           </a>
         </div>
       </div>

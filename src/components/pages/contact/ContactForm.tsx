@@ -24,9 +24,7 @@ const ContactForm = () => {
     },
     onSubmit: (values, { setSubmitting }) => {
       let body = `First Name=${values.name}%0D%0AContact=${values.contact}%0D%0AEmail=${values.email}`;
-      router.push(
-        `mailto:thakuraryan942@gmail.com?subject=Contact&body=${body}`,
-      );
+      router.push(`mailto:someone@gmail.com?subject=Contact&body=${body}`);
     },
     validationSchema: yup.object({
       name: yup.string().required("Enter Your Name"),
